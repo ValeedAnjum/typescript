@@ -3,10 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [persons, setPersons] = useState([
-    {name:"Valeed Anjum",url:"",age:23,note:"I am note 1"},
-    {name:"Valeed Anjum",url:"",age:23},
-  ]);
+  const [persons, setPersons] = useState([]);
   persons.map(person => {
     person.name = 'This must be string'
   })
