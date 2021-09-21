@@ -1,11 +1,16 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+interface iState {
+  person:{
+    name:string,
+    age:number
+  }[]
+}
 function App() {
-  const [persons, setPersons] = useState<{name:string}[]>([]);
-  persons.map(person => {
-    person.name = 'This must be string'
+  const [persons, setPersons] = useState<iState['person']>([]);
+  const test = persons.map(person => {
+    return person.age = 32
   })
   return (
     <div className="App">
