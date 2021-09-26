@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <h1>People Invited To My Party</h1>
       <List person={persons} />
-      {/* <AddToList setPeople={setPersons} people={persons}/> */}
+      <AddToList setPeople={setPersons} people={persons}/>
       <Test test={[{a:2}]} handleChange={e => {
         console.log(e)
       }} />
